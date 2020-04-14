@@ -46,7 +46,10 @@ public class Bank implements Serializable{ //we can implement Serializable to sa
 	//deposit money method
 	
 	//view balance
-	
+	public void viewBalance(BankAccount BA) {
+		System.out.printf("%.2f%nAccount: %s%n", 
+				  BA.getBalance(), (BA instanceof CheckingAccount) ? "Checking" : "Savings");
+	}
 	//transfer money	
 	
 	//close account
