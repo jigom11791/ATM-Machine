@@ -82,7 +82,10 @@ public class ATM {
 			case "2": withdrawFunds(); break;
 			case "3": transferFunds(); break;
 			case "4": viewBalance(); break;
-			case "5": cancel = true; welcomeScreen(); break;
+			case "5": cancel = true;
+				System.out.println("Please remove card");
+				welcomeScreen();
+				break;
 			case "6": quit = true; break;
 			default: System.out.println("Invalid Input");
 			}
