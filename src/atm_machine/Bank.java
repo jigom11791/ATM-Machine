@@ -58,12 +58,13 @@ public class Bank {
 		if(withdraw(i,amount)) {
 			while(it.hasNext()) {
 				temp = it.next();
-				System.out.println(temp.getAccountNumber() + " " + aNum + " " + bankAccountType);
+				//System.out.println(temp.getAccountNumber() + " " + aNum + " " + bankAccountType);
 				if(temp.getAccountNumber().equals(aNum)) {
 					temp.getAccount(bankAccountType).deposit(amount);
 					return true;
 				}
 			}
+			deposit(i, amount) //undo the money withdraw
 			return false;
 		}else {
 			return false;
