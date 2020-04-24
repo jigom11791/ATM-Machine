@@ -64,7 +64,7 @@ public class Bank {
 					return true;
 				}
 			}
-			deposit(i, amount) //undo the money withdraw
+			deposit(i, amount); //undo the money withdraw
 			return false;
 		}else {
 			return false;

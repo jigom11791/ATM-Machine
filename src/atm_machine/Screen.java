@@ -23,7 +23,7 @@ public class Screen {
     public static void displayMainMenu() {
         String mainMenu = String.format(
                 "What would you like to do today?%n%n1. %s%n2. %s%n3. %s%n4. %s%n5. %s%n6. %s%n%nENTER NUMBER: ",
-                "Deposit", "Withdraw", "Transfer", "View Balance", "Return Home", "Exit");
+                "Deposit", "Withdraw", "Transfer", "View Balance", "Finish", "Exit Program (For Testing/maintence purposes)");
         printMenuTemplate("MAIN MENU", mainMenu);
     }
     /**

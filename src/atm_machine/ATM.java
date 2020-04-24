@@ -84,6 +84,7 @@ public class ATM {
 			case "4": viewBalance(); break;
 			case "5": cancel = true;
 				System.out.println("Please remove card");
+				pressEnterToContinue();
 				welcomeScreen();
 				break;
 			case "6": quit = true; break;
